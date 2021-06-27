@@ -11,5 +11,5 @@ br_com_camilotk_hellojni_HelloWorldJNI.h:	./src/main/java/br/com/camilotk/helloj
 	mkdir bin
 	g++ -c -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/linux ./src/main/java/br/com/camilotk/hellojni/br_com_camilotk_hellojni_HelloWorldJNI.cpp -o ./bin/br_com_camilotk_hellojni_HelloWorldJN.o
 
-run:	./bin
+run:	build
 	@java -Dfile.encoding=UTF-8 -Djava.library.path=./bin -cp ./target/classes br.com.camilotk.hellojni.HelloWorldJNI
